@@ -26,7 +26,8 @@ const options = {
       buttonEl.removeAttribute('disabled');
       userSelectedDate = userData;
     } else {
-      iziToast.show({
+      iziToast.error({
+        title: 'Error',
         message: 'Please choose a date in the future',
       });
       buttonEl.setAttribute('disabled', '');
